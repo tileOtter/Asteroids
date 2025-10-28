@@ -34,7 +34,7 @@ def main():
                 sys.exit("Game over!")
             for shoot in shots:
                 if ast.collision(shoot):
-                    ast.kill()
+                    ast.split()
                     shoot.kill()
         for sprite in drawable:
             sprite.draw(screen)
